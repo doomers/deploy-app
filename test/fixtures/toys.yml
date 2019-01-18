@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  sold: false
+  length: 1.5
+  width: 1.5
+  weight: 1.5
+  selling_time: 2019-01-18 14:53:41
+  buying_time: 2019-01-18 14:53:41
+  quantity: 
+  selling_price: 1
+  buying_price: 1
+
+two:
+  name: MyString
+  sold: false
+  length: 1.5
+  width: 1.5
+  weight: 1.5
+  selling_time: 2019-01-18 14:53:41
+  buying_time: 2019-01-18 14:53:41
+  quantity: 
+  selling_price: 1
+  buying_price: 1

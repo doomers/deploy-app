@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @toy.name %>
+</p>
+
+<p>
+  <strong>Sold:</strong>
+  <%= @toy.sold %>
+</p>
+
+<p>
+  <strong>Length:</strong>
+  <%= @toy.length %>
+</p>
+
+<p>
+  <strong>Width:</strong>
+  <%= @toy.width %>
+</p>
+
+<p>
+  <strong>Weight:</strong>
+  <%= @toy.weight %>
+</p>
+
+<p>
+  <strong>Selling time:</strong>
+  <%= @toy.selling_time %>
+</p>
+
+<p>
+  <strong>Buying time:</strong>
+  <%= @toy.buying_time %>
+</p>
+
+<p>
+  <strong>Quantity:</strong>
+  <%= @toy.quantity %>
+</p>
+
+<p>
+  <strong>Selling price:</strong>
+  <%= @toy.selling_price %>
+</p>
+
+<p>
+  <strong>Buying price:</strong>
+  <%= @toy.buying_price %>
+</p>
+
+<%= link_to 'Edit', edit_toy_path(@toy) %> |
+<%= link_to 'Back', toys_path %>

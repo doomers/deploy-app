@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Toys</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Sold</th>
+      <th>Length</th>
+      <th>Width</th>
+      <th>Weight</th>
+      <th>Selling time</th>
+      <th>Buying time</th>
+      <th>Quantity</th>
+      <th>Selling price</th>
+      <th>Buying price</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @toys.each do |toy| %>
+      <tr>
+        <td><%= toy.name %></td>
+        <td><%= toy.sold %></td>
+        <td><%= toy.length %></td>
+        <td><%= toy.width %></td>
+        <td><%= toy.weight %></td>
+        <td><%= toy.selling_time %></td>
+        <td><%= toy.buying_time %></td>
+        <td><%= toy.quantity %></td>
+        <td><%= toy.selling_price %></td>
+        <td><%= toy.buying_price %></td>
+        <td><%= link_to 'Show', toy %></td>
+        <td><%= link_to 'Edit', edit_toy_path(toy) %></td>
+        <td><%= link_to 'Destroy', toy, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Toy', new_toy_path %>

@@ -1,0 +1,67 @@
+<%= form_with(model: toy, local: true) do |form| %>
+  <% if toy.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(toy.errors.count, "error") %> prohibited this toy from being saved:</h2>
+
+      <ul>
+      <% toy.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :sold %>
+    <%= form.check_box :sold %>
+  </div>
+
+  <div class="field">
+    <%= form.label :length %>
+    <%= form.text_field :length %>
+  </div>
+
+  <div class="field">
+    <%= form.label :width %>
+    <%= form.text_field :width %>
+  </div>
+
+  <div class="field">
+    <%= form.label :weight %>
+    <%= form.text_field :weight %>
+  </div>
+
+  <div class="field">
+    <%= form.label :selling_time %>
+    <%= form.time_select :selling_time %>
+  </div>
+
+  <div class="field">
+    <%= form.label :buying_time %>
+    <%= form.time_select :buying_time %>
+  </div>
+
+  <div class="field">
+    <%= form.label :quantity %>
+    <%= form.text_field :quantity %>
+  </div>
+
+  <div class="field">
+    <%= form.label :selling_price %>
+    <%= form.number_field :selling_price %>
+  </div>
+
+  <div class="field">
+    <%= form.label :buying_price %>
+    <%= form.number_field :buying_price %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
